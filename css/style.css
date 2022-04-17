@@ -1,0 +1,829 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+body,html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+    background-color: #f6f6f6;
+    font-family: 'Century Gothic',Helvetica;
+ }
+
+
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%;
+  background: transparent;
+  float: left;
+  position: fixed;
+  background-color: #f6f6f6;
+}
+
+#header {
+  background-color: #fafafa;
+}
+
+header #logo {
+  float: left;
+  width: 10%;
+  color: #f6f6f6;
+  cursor: pointer;
+  padding-left: 15px;
+}
+
+header #logo span {
+  font-size: 3em;
+  line-height: 45px;
+  font-family: 'Druk Cyr', sans-serif;
+}
+
+header #about {
+  float: right;
+  width: 70%;
+  font-size: 1em;
+  line-height: 45px;
+  font-family: 'Century Gothic Regular', helvetica;
+}
+
+
+#about {
+  text-align: right; 
+  margin-bottom: 15px; 
+}
+
+#about > a {
+  color: #f6f6f6;
+  text-decoration: none;
+  transition: 0.10s linear
+ }
+
+#about > a:hover {
+  color: #7f7f7f;
+  transition: 0.10s linear;
+}
+
+   #about > a {
+   margin-right: 2.5%;
+}
+
+@media (max-width: 1323px) {
+  header #logo {
+    width: 20%;
+    font-size: 1em;
+  }
+
+  header #about {
+   width: 77.5%;
+  }
+}
+
+@media (max-width: 972px) {
+  header #logo {
+   width: 100%;
+   text-align: center;   
+   padding: 0;
+  }
+
+  header #about{
+   width: 100%;   
+   text-align: center;
+   margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 757px) {
+  header #logo {
+   width: 100%;
+   text-align: center;  
+   
+  }
+
+  header #about{
+   width: 100%;
+   text-align: center;
+   margin-bottom: 5px;
+   font-size: 0.8em;
+  }
+}
+
+
+.fixed2 {
+ z-index: 5000;
+ background-color: rgba(205, 92, 92, 0.5);
+ transition: 0.25s linear;
+ }
+.fixed {
+ z-index: 5000;
+ background-color: #f6f6f6;
+ transition: 0.25s linear;
+ }
+
+
+header.fixed #logo {
+  color: #CD5C5C;
+}
+
+.fixed #about a {color: #CD5C5C; transition: 0.25s linear}          /* #7f7f7f} */
+.fixed #about a:hover {color: #582727; transition: 0.25s linear}    /* #CD5C5C} */
+
+#top,#top10,#toph, #topm, #topf, #topmet, #topfacts {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #f6f6f6;
+  font-size: 3em;
+  background-attachment: fixed;
+  background-color: #4c3a3a;
+}
+
+#topfacts {
+  overflow: hidden;
+  background-image: url(../images/topfacts.jpeg);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#topmet {
+  overflow: hidden;
+  background-image: url(../images/methods.jfif);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#topf {
+  overflow: hidden;
+  background-image: url(../images/features.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#topm {
+  background-image: url(../images/mythbg1.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#toph {
+  background-image: url(../images/history1bg.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#top10 {
+  background-image: url(../images/top10.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#top {
+  background-image: url(../images/bg1.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+#top h1,#top10 h1,#toph h1,#topmet h1, #topfacts h1 {
+  width: 100%;
+  height: 35%;
+  }
+#topm h3,#topf h3 {
+  width: 100%;
+  height: 40%;
+}
+#top h2,#top10 h2,#toph h2,#topm h1,#topf h3,#topmet h2, #topfacts h2 {
+    font-size: 2em;
+    color: #f6f6f6;
+  }
+
+#top h2 {
+  font-size: 2.22em;
+}
+
+#toph h2, #topfacts h2 {
+  font-size: 2.45em;
+}
+
+#topmet h2 {
+  font-size: 2.37em;
+}
+
+#top h3,#top10 h3,#toph h3,#topmet h3, #topfacts h3  {
+  color: #e9a4a4;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Century Gothic Regular'
+}
+
+#top p,#top10 p,#toph p,#topm p, #topf p, #topmet p, #topfacts p {
+ position: absolute; 
+ bottom: 0;
+ padding-top: 17%;
+ opacity: 30%;
+ width: 100%;
+}
+
+#top img,#top10 img,#toph img,#topm img,#topf img, #topmet img, #topfacts img {
+  cursor: pointer;
+  transition: transform .9s;
+}
+
+#top img:hover,#top10 img:hover,#toph img:hover,#topm img:hover,#topf img:hover, #topmet img:hover, #topfacts img:hover {
+  transform: scale(1.3);
+}
+
+@media (max-width: 909px) {
+  #top h2,#top10 h2,#toph h2, #topm h1, #topf h1, #topmet img, #topfacts img {
+   font-size: 1.5em;
+  }
+  #top h3,#top10 h3,#toph h3, #topmet h3, #topfacts h3 {
+    font-size: 1em;    
+  }
+}
+
+#main, #mainf,#mainm,#maint, #mainmet {
+  overflow: hidden;
+  padding: 100px 10%;
+  width: 80%;
+  float: left;
+  background-color: #f6f6f6;
+  border-top: 2px solid #CD5C5C;
+  font-size: 1.3em; 
+}
+
+.kakvt ul, .featuress ul, .meth ul {
+  float: right;
+  color: #CD5C5C;
+  width: 49%;
+}
+
+.kakvt p, .featuress p, .myths p, .top10t p, .meth p {
+  width: 100%;
+  color: #7f7f7f;
+  font-family: 'Century Gothic';
+  font-size: 2.05em;
+  /*text-decoration: none;*/
+  cursor: pointer;
+  transition: transform .4s ;
+  font-weight: normal;
+}
+
+.myths p, .top10t p {
+  margin: 0 0 5px 15px;
+}
+
+.kakvt p:hover, .featuress p:hover,.myths p:hover, .top10t p:hover, .meth p:hover {
+    transform: scale(1.03) ;
+    color: #616161; 
+}
+
+.kakv h1, .features h1, .met h1 {
+  font-size: 6.5em;
+  color: #CD5C5C;
+  width: 49%;
+  float: left;
+  text-align: right;
+  margin-top: -40px;
+}
+
+.met h1 {
+  font-size: 5em;
+}
+ 
+.meth ul {
+  font-size: 1.3em;
+  margin-top: -25px 
+}
+
+
+.myths ol, .top10t ol {
+    color: #CD5C5C;
+    float: right;
+    width: 69%;
+    font-weight: bold;
+}
+
+ .myth h2 {
+  font-size: 5.85em;
+  color: #CD5C5C;
+  width: 29%;
+  float: left;
+  text-align: right;
+  margin-top: -40px
+}
+
+.top10 {
+  text-align: center;
+  font-size: 5.85em;
+  color: #CD5C5C;
+}
+
+#top10 h2 { 
+  font-size: 3.3em;
+}
+
+@media (min-width: 2200px) {
+  #main, #maind, #mainm,#maint, #mainmet {
+    font-size: 1.9em; 
+  }
+}
+@media (max-width: 1603px) {
+  #main, #mainf,#mainm,#maint, #mainmet {
+    font-size: 1em;
+  }
+  .kakv h1, .features h1,.myth h2, .met h1 {
+    margin-top: -30px;
+  }
+}
+@media (max-width: 1300px) {
+  #main, #mainf,#mainm,#maint, #mainmet {
+    font-size: 0.9em;
+  }
+  .kakv h1, .features h1,.myth h2, .met h1 {
+    margin-top: -28px;
+  }
+}
+@media(min-width: 1101px) {
+  #mainm h2 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+}
+
+@media (max-width: 1100px) {
+  #main, #mainf,#mainm, #maint, #mainmet {
+    width: 100%;
+    padding: 100px 0%;
+  }  
+  .kakv h1, .features h1,.myth h2, .met h1 {
+    width: 100%;
+    font-size: 3.5em;
+    float: center;
+    text-align: center;
+    margin-bottom: 25px;
+  }  
+  .kakvt ul, .featuress ul,.myths ol, .top10t ol, .meth ul {
+  width: 92%;
+  text-align: left;
+  float: center;
+  font-size: 1.5em;
+  }
+}
+@media (max-width: 930px) {
+  #main, #mainf,#mainm, #maint, #mainmet {
+    font-size: 0.6em;
+  }
+}
+@media (max-width: 320px) {
+  body,html {
+    width: 100%;
+    height: 100%;
+  }
+}
+ 
+#sez,#pyatno,#setka,#polosi,#pol,#myak, #europe,#real, #chemistry, #gmo ,#seeds ,#pregnant ,#berry,#therapeutic, #traditional, #science, #cooking, .srd-2, .astrakhan, .suite, .siberia, .fire, .met1, .met3, .met5 {
+  overflow: hidden;
+  float: left;
+  border-top: 2px solid #CD5C5C;
+  width: 90%;
+  padding: 100px 5% 100px 5%;
+  font-size: 1.5em;
+}
+#sez h2,#pyatno h2,#setka h2,#polosi h2,#pol h2,#myak h2, #europe h2,#real h2, #chemistry h2,#gmo h2,#seeds h2,#pregnant h2,#berry h2,#therapeutic h2,#traditional h2, #science h2, #cooking h2, .srd-2 h2, .met1 h2, .met3 h2, .met5 h2, .astrakhan h2, .suite h2, .siberia h2, .fire h2 {
+  color: #fafafa;
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 100px;
+  text-shadow: 0px 0px 7px #CD5C5C;
+}
+#sez p,#pyatno p,#polosi p,#setka p,#pol p,#myak p,#europe p,#real p,#chemistry p,#gmo p,#seeds p,#pregnant p,#berry p,#therapeutic p,#traditional p, #science p, #cooking p, .srd-2 p, .met1 p, .met3 p, .met5 p, .astrakhan p, .suite p, .siberia p, .fire p {
+  text-shadow: 0px 0px 10px #000;
+  color:#fafafa;
+}
+#sez ul,#pyatno ul, #polosi ul, #setka ul, #pol ul, #myak ul, #water ul, .met1 ol, .met2 ol, .met4 ol, .met3 ol, .met5 ol {
+  margin-left: 1.4%; 
+  color:#CD5C5C;
+}
+#sez img,#pyatno img,#setka img,#polosi img,#pol img,#myak img,#europe img,#real img,#chemistry img,#gmo img,#seeds img,#pregnant img,#berry img,#therapeutic img,#traditional img,#science img,#cooking img, .srd-2 img, .met1 img, .met3 img, .met5 img, .astrakhan img, .suite img, .siberia img, .fire img {
+  background:#fafafa;
+  padding: 5px;
+  box-shadow: 0px 0px 7px #CD5C5C;
+  float: right;
+}
+
+#sost,#razmer,#zvuk,#hvostik,#bezop,#water,#homeland,#rus, #diet, #red, #august, #square,#medical ,#east ,#cosmetic, .chill, .met2, .met4, .torpedo, .sashagrey, .baby, .moon {
+  overflow: hidden;
+  background-color: #f6f6f6;
+  float: left;
+  border-top: 2px solid #CD5C5C;
+  width: 90%;
+  padding: 100px 5% 100px 5%;
+  font-size: 1.5em;
+}
+#sost h2,#razmer h2,#zvuk h2,#hvostik h2,#bezop h2,#water h2,#homeland h2,#rus h2, #diet h2, #red h2, #august h2, #square h2,#medical h2,#east h2,#cosmetic h2, .chill h2, .met2 h2, .met4 h2, .torpedo h2, .sashagrey h2, .baby h2, .moon h2 {
+  color: #CD5C5C;
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 100px;
+}
+#sost p,#razmer p,#zvuk p,#hvostik p,#bezop p,#water p,#homeland p,#rus p, #diet p, #red p, #august p, #square p,#medical p,#east p,#cosmetic p, .chill p, .met2 p, .met4 p, .torpedo p, .sashagrey p, .baby p, .moon p {
+  color: #7f7f7f;
+}
+#sost p:nth-child(7), #pyatno p:nth-child(7),#pol p:nth-child(7),#myak p:nth-child(7), #razmer p:nth-child(8),#polosi p:nth-child(7), #zvuk p:nth-child(4), #zvuk p:nth-child(10),#zvuk p:nth-child(7),#setka p:nth-child(9),
+#hvostik p:nth-child(7),#chemistry p:nth-child(4),#gmo p:nth-child(4),#red p:nth-child(4),#seeds p:nth-child(4),#august p:nth-child(4),#pregnant p:nth-child(4),#square p:nth-child(4), #berry p:nth-child(4), #cooking p:nth-child(4), #diet p:nth-child(4), #therapeutic p:nth-child(4), #traditional p:nth-child(4) {
+  float: left;
+  text-align: center;
+  color: #CD5C5C;
+  font-weight: bold;
+  margin: 1% 0;
+}
+
+#east p:nth-child(5) {
+   color: #CD5C5C;
+   font-weight: bold;
+}
+
+#sost ul, #razmer ul, #zvuk ol, #hvostik ul, #bezop ul, #water ul, #cosmetic ul {
+  color: #CD5C5C;
+}
+#sost img, #razmer img, #zvuk img, #hvostik img, #bezop img,#homeland img,#rus img, #diet img, #red img, #august img, #square img,#medical img,#east img,#cosmetic img, .chill img, .met2 img, .met4 img, .torpedo img, .sashagrey img, .baby img, .moon img,
+#sez img,#pyatno img,#setka img,#polosi img,#pol img,#myak img,#europe img,#real img,#chemistry img,#gmo img,#seeds img,#pregnant img,#berry img,#therapeutic img,#traditional img,#science img,#cooking img, .srd-2 img, .met1 img, .met3 img, .met5 img, .met1 img, .astrakhan img, .suite img, .siberia img, .fire img {
+  max-width: 45%;
+  margin: 0% 2% 1% 1%;
+}
+#sost img,#razmer img,#zvuk img,#hvostik img,#bezop img, #homeland img,#rus img,#diet img, #red img, #august img, #square img,#medical img,#east img,#cosmetic img, .chill img, .met2 img, .met4 img, .torpedo img, .sashagrey img, .baby img, .moon img  {
+  background:#CD5C5C;
+  padding: 5px;
+  box-shadow: 0px 0px 7px #CD5C5C;
+  float: left;
+}
+@media (max-width: 972px) {
+  #sost img,#razmer img,#zvuk img,#hvostik img,#bezop img,#homeland img,#rus img, #diet img, #diet img, #red img, #august img, #square img,#medical img,#east img,#cosmetic img, .chill img, .met2 img, .met4 img, .torpedo img, .sashagrey img, .baby img, .moon img,
+  #sez img, .srd-2 img, .met1 img, .met3 img, .met5 img, .astrakhan img, .suite img, .siberia img, .fire img, #pyatno img,#setka img,#polosi img,#pol img,#myak img,#europe img,#real img,#chemistry img,#gmo img,#seeds img,#pregnant img,#berry img,#therapeutic img,#traditional img,#science img,#cooking img {
+  max-width: 100%;
+  margin: 0 -1.5% 3% -1.5%;
+  }
+  #sost p,#razmer p,#zvuk p,#hvostik p,#bezop p,#homeland p,#rus p, #diet p, #red p, #august p, #square p,#medical p,#east p,#cosmetic p, .chill p, .met2 p, .met4 p, .torpedo p, .suite p, .sashagrey p, .baby p, .moon p
+  #sez p, .astrakhan p, .suite p, .siberia p, .fire p,#pyatno p,#polosi p,#setka p,#pol p,#myak p,#europe p,#real p,#chemistry p,#gmo p,#seeds p,#pregnant p,#berry p,#therapeutic p,#traditional p, #science p, #cooking p, .srd-2 p, .met1 p, .met3 p, .met5 p, .astrakhan p, .suite p, .siberia p, .fire p {
+  width: 95%;
+  margin-left: 0%;
+  }  
+}
+#sez {
+  background: url(../images/sez.jpg) fixed rgba(28, 28, 28, 0.7);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+#pyatno {
+  background: url(../images/pyatno.jpg) fixed rgba(28, 28, 28, 0.8);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+#polosi {
+  background: url(../images/polosi.jpg) fixed rgba(28, 28, 28, 0.8);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+#setka {
+  background: url(../images/setka.jpg) fixed rgba(28, 28, 28, 0.8);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+#pol {
+  background: url(../images/pol.jpg) fixed rgba(28, 28, 28, 0.8);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+#myak {
+  background: url(../images/myak.jpg) fixed rgba(28, 28, 28, 0.7);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+#naposledok {
+  padding: 14020px 30% 50px 30%;
+  background: url(../images/bg1.jpg) fixed rgba(28, 28, 28, 0.8);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#naposledok h2 {
+  color: #fafafa;
+  text-align: center;
+  font-size: 3em;
+  margin: 40px 0 40px 0;
+  text-shadow: 0px 0px 7px #CD5C5C;
+}
+#naposledok img {
+  float: center;
+  width: 100%;
+}
+#naposledok img {
+  background:#fafafa;           
+  padding: 5px;
+  box-shadow: 0px 0px 7px #CD5C5C;
+}
+@media (max-width: 972px) {
+  #naposledok img {
+  max-width: 95%;
+  padding-right: 1.2%;
+  }
+}
+#europe {
+  background: url(../images/europe.jpg) fixed rgba(28, 28, 28, 0.8);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+#real {
+  background: url(../images/real.jpg) fixed rgba(28, 28, 28, 0.8);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#chemistry {
+  background: url(../images/chemistry.jpg) fixed #6b6b6b;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#gmo {
+  background: url(../images/gmo.jpg) fixed #6b6b6b;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#seeds {
+  background: url(../images/seeds.jpg) fixed #6b6b6b;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#pregnant {
+  background: url(../images/pregnant.jpg) fixed #6b6b6b;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#berry {
+  background: url(../images/berry.jpg) fixed #6b6b6b;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+.featuress {
+  margin-top: 1.2%;
+}
+#therapeutic {
+  background: url(../images/therapeutic.jpg) fixed #3c3c3c;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#therapeutic img:nth-child(10), #science img:nth-child(8) {
+  float: left;
+  margin: 1% 1% 1% 0;
+}
+
+#traditional {
+  background: url(../images/traditional.jpg) fixed #3c3c3c;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#science {
+  background: url(../images/science.jpg)fixed #3c3c3c;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+#cooking {
+  background: url(../images/cooking.jpg) fixed #3c3c3c;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+#water img {
+  max-width: 50%;
+  margin: 2% 0 2% 0%;
+  float: center;
+}
+#water img {
+  background:#CD5C5C;           
+  padding: 5px;
+  box-shadow: 0px 0px 7px #CD5C5C;
+  float: center;
+}
+@media (max-width: 972px) {
+  #water img {
+  max-width: 100%;
+  }
+}
+
+.srd-2 {
+  background: url(../images/srd-2.jpg) fixed #3c3c3c;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.astrakhan {
+  background: url(../images/astrakhan.jpg) fixed #3c3c3c;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.suite {
+  background: url(../images/suite.jpg) fixed #3c3c3c;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.siberia {
+  background: url(../images/siberia.jpg) fixed #3c3c3c;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.fire {
+  background: url(../images/fire.jpg) fixed #3c3c3c;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.met1 {
+  background: url(../images/met1.jpg) fixed #3c3c3c;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.met3 {
+  background: url(../images/met3.jpg) fixed #3c3c3c;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.met5 {
+  background: url(../images/met5.jpg) fixed #3c3c3c;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+
+#feedback {
+  overflow: hidden;
+  background-color: #CD5C5C;
+  float: left;
+  text-align: center;
+  width: 90%;
+  padding: 7px 5% 7px 5%;
+}
+
+
+#feedback a {
+  font-family: helvetica;
+  text-decoration: none;
+  color: #f6f6f6;
+  width: 90%;
+  font-size: 1em;
+}
+
+
+#copy {
+  font-family: 'Century Gothic Regular';
+  background-color: #883838;
+  float: left;
+  text-align: center;
+  width: 90%;
+  padding: 16px 5% 16px 5%;
+}
+
+
+#copy span {
+  color: #f6f6f6;
+  width: 90%;
+  font-size: 0.9em;
+}
+
+
+.strup {
+  border-radius: 5px;
+  right: 1%;
+  position: fixed;
+  bottom: 2%;
+  width: 30px;
+  height: 20px;
+  background-color: #CD5C5C;
+  margin-bottom: 15px;
+}
+
+.arrow-up {
+  margin-bottom: 0px;
+  margin-right: 9px;
+  bottom: 2%;
+  float: center;
+  position: fixed;
+  border-top: 3px solid #fafafa;
+  border-right: 3px solid #fafafa;
+  width: 10px;
+  height: 10px;
+  right: 1%;
+  transform: rotate(-45deg);
+  margin-bottom: 15px;
+}
+
+.strdown {
+  border-radius: 5px;
+  right: 1%;
+  position: fixed;
+  bottom: 1.2%;
+  width: 30px;
+  height: 20px;
+  background-color: #CD5C5C;
+}
+
+.arrow-down {
+  margin-bottom: 0px;
+  margin-right: 9px;
+  bottom: 2%;
+  float: center;
+  position: fixed;
+  border-top: 3px solid #fafafa;
+  border-right: 3px solid #fafafa;
+  width: 10px;
+  height: 10px;
+  right: 1%;
+  transform: rotate(135deg);
+}
+form {
+  position: fixed;
+  overflow: hidden;
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding: 100px 5% 100px 5%;
+  background: url(../images/bg1.jpg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #262626;
+}
+.form {
+  margin: 10% 33%;
+  background-color: #fff;
+  border: 2px solid #cd5c5c;
+  box-shadow: 0 0 0 10px #fff;
+  height: 350px;
+  width: 420px;
+  text-align: center;
+  border-radius: 50px;
+}
+.mainText {
+  font-size: 27px;
+  margin: 40px 0 5px 0;
+  color: #cd5c5c;
+}
+.secondText {
+  font-size: 18px;
+  margin: 0;
+  color: #7b7b7b;
+  margin-bottom: 25px;
+}
+.formInput input{
+  border: none;
+  outline: none;
+  background: #f1f1f1;
+  height: 50px;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 50px;
+  ont-size: 15px;
+  width: 300px;
+  margin: 15px auto 0 auto;
+}
+.send {
+  border: none;
+  color: #fff;
+  background: #cd5c5c;
+  width: 180px;
+  height: 40px;
+  font-weight: bold;
+  border-radius: 40px;
+  font-size: 18px;
+  margin-top: 30px;
+  box-shadow: 0 0 20px 0 rgba(205, 92, 92, .8);
+  transition: .4s;
+  outline: none;
+  cursor: pointer;
+}
+.send:hover {
+  box-shadow: 0 0 25px 5px rgba(205, 92, 92, 1);
+}
+
+#table {
+
+  height: 30000px;
+  position: fixed;
+  background-color: red;
+}

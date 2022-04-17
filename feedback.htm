@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="icon" href="/images/icon.png" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/maign.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Обратная связь</title>
+</head>
+<body>
+
+<header>
+
+  <div id="logo" onclick="slowScrollH('#topf')">
+    <span>АРБУЗИЩЕ.RU</span>
+  </div>
+    
+    <div id="about">
+        <a href="index.html">Главная</a>
+        <a href="history.htm">История</a>
+        <a href="myth.htm">Мифы</a>
+        <a href="features.htm">Полезные свойства</a>
+        <a href="top.htm">ТОП-10</a>
+        <a href="methods.htm">Способы подачи</a>
+    </div>
+
+</header>
+
+<form action="feedback.php" methods="post">
+	<div class="form">
+		<h2 class="mainText">Оставьте сообщение </h2>
+		<p class="secondText">И мы свяжемся с вами!</p>
+		<div class="formInput">
+			<span><i class="fio"></i></span>
+			<input type="text" placeholder="Введите ваше имя">
+		</div>
+		<div class="formInput">
+			<span><i class="message"></i></span>
+			<input type="text" placeholder="Введите сообщение">
+		</div>
+		<input type="submit" class="send" value="Отправить">
+	</div>
+</form>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  
+  function slowScrollH(id) {
+    $('html,body').animate({
+         scrollTop: $(id).offset().top 
+    }, 1250); 
+  }
+
+  function slowScroll(id) {
+    $('html,body').animate({
+         scrollTop: $(id).offset().top 
+    }, 750); 
+  }
+ 
+ 
+  $("header").attr("class","fixed"); 
+  $(document).on("scroll", function () {
+    if($(window).scrollTop() === 0)
+  $("header").attr("class","fixed");
+   else
+   $("header").attr("class","fixed2");
+  });
+
+ 
+  AOS.init();
+
+</script>
+
+</body>
+</html>
